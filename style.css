@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+    height: auto;
+    background-color: yellowgreen;
+}
+
+#header{
+grid-column: 1/-1;
+
+
+}
+
+
+#leftside{
+    grid-column: 1/6;
+    grid-row:2/8;
+    background-color: rgb(238, 195, 130);
+}
+.text-content{
+
+    width:100%;
+    height: 200px;
+    background-color: rgb(130, 238, 139);
+}
+
+#main{
+    grid-column:4/-1;
+    grid-row:4/8;
+    background-color: rgb(130, 238, 229);
+
+}
+
+#footer{
+background-color: violet;
+grid-column: 1/-1;
+grid-row:8/12;
+    
+}
